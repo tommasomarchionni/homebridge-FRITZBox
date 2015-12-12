@@ -23,6 +23,7 @@ Configuration sample:
     }
 ]
 ```
+
 Fields: 
 * "platform" - Must be set to FRITZ!Box
 * "name" - Name of FRITZ!Box, default FRITZ!Box
