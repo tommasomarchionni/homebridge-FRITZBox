@@ -1,0 +1,35 @@
+{
+  "name": "homebridge-fritzbox",
+  "version": "0.1.15",
+  "description": "Homebridge plugin for FRITZ!Box",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Error: configure and run homebridge to start\" && exit 1"
+  },
+  "engines": {
+    "node": ">4.0.0",
+    "homebridge": ">=0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommasomarchionni/homebridge-FRITZBox.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "FRITZ!Box",
+    "homekit",
+    "fritzbox",
+    "Siri"
+  ],
+  "dependencies": {
+    "ws": "^0.8.1",
+    "request": "^2.65.0"
+  },
+  "author": "tommasomarchionni",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tommasomarchionni/homebridge-FRITZBox/issues"
+  },
+  "homepage": "https://github.com/tommasomarchionni/homebridge-FRITZBox#readme"
+}
