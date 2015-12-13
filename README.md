@@ -1,4 +1,4 @@
-# homebridge-FRITZBox
+# homebridge-FRITZBox WORK IN PROGRESS
 Homebridge plugin for FRITZ!Box
 
 # Installation
