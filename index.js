@@ -1,12 +1,15 @@
 'use strict';
 
 var Homebridge, Accessory;
-var request = require("request");
+var ItemFactory = require('./libs/ItemFactory.js');
+var Utility = require('./libs/Utility.js');
 
 module.exports = function(homebridge) {
     Accessory = homebridge.hap.Accessory;
     Homebridge = homebridge;
 
+    Utility.addSupportTo(ItemFactory.AbstractItem, Accessory);
+    Utility.addSupportTo(ItemFactory.WifiGuestItem, ItemFactory.AbstractItem);
     homebridge.registerPlatform("homebridge-fritzbox", "FRITZ!Box", FRITZBoxPlatform);
 };
 
@@ -14,13 +17,11 @@ module.exports = function(homebridge) {
 
 function FRITZBoxPlatform(log, config){
     this.log    = log;
-    this.host   = config["host"];
-    this.user     = config["user"];
-    this.password = config["password"];
+    this.config = config;
 }
 
 FRITZBoxPlatform.prototype.accessories = function(callback) {
-    var that = this;
-    this.log("Platform - Fetching FRITZ!Box Charateristics.");
-    this.log("Platform - There was a problem connecting to FRITZ!Box.");
+    this.log("Platform - Fetching FRITZ!Box items..");
+    var itemFactory = new ItemFactory.Factory(this,Homebridge);
+    callback(itemFactory.CreateAccessories());
 };

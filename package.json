@@ -1,6 +1,6 @@
 {
   "name": "homebridge-fritzbox",
-  "version": "0.1.15",
+  "version": "0.1.20",
   "description": "Homebridge plugin for FRITZ!Box",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,6 @@
     "Siri"
   ],
   "dependencies": {
-    "ws": "^0.8.1",
     "request": "^2.65.0"
   },
   "author": "tommasomarchionni",

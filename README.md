@@ -1,5 +1,5 @@
-# homebridge-FRITZBox WORK IN PROGRESS
-Homebridge plugin for FRITZ!Box
+# homebridge-FRITZBox (WORK IN PROGRESS)
+Homebridge plugin for FRITZ!Box, for now you can only enable/disable Guest WiFi.
 
 # Installation
 Follow the instruction in [homebridge](https://www.npmjs.com/package/homebridge) for the homebridge server installation.
