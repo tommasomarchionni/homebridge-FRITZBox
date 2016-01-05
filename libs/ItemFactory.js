@@ -2,7 +2,7 @@
 var exports = module.exports = {};
 exports.AbstractItem = require('../items/AbstractItem.js');
 exports.WifiGuestItem = require('../items/WifiGuestItem.js');
-var FritzBoxAPI = require('./FritzBoxApi.js').FritzBoxAPI;
+var FritzBoxAPI = require('./FritzBoxAPI.js').FritzBoxAPI;
 
 exports.Factory = function(FRITZBoxPlatform,homebridge) {
     this.platform = FRITZBoxPlatform;
