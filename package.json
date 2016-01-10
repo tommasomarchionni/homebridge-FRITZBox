@@ -1,6 +1,6 @@
 {
   "name": "homebridge-fritzbox",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "Homebridge plugin for FRITZ!Box",
   "main": "index.js",
   "scripts": {
