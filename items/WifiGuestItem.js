@@ -51,7 +51,7 @@ WifiGuestItem.prototype.checkItemState = function(response) {
     if (null !== matches){
         return (1 == parseInt(matches[1]));
     } else {
-        self.log('WifiGuestItem - Invalid response.');
+        this.log('WifiGuestItem - Invalid response.');
         return false;
     }
 };
